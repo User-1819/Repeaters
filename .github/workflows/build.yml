@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Compile Project using mono
+      - name: Compile Repeater using mono
         shell: bash
         id: compile
         run: |
-          msbuild Solution.sln /p:Configuration=Release
-          cp -R Output Output_normal
-          msbuild Project.csproj /p:Configuration=Release
+          msbuild Repeat.sln /p:Configuration=Release
+          cp -R bin/Release bin/Release_normal
+          msbuild Repeater/Repeater.csproj /p:Configuration=Release
 
       - uses: ./.github/actions/notify_failure
         if: ${{ always() && steps.compile.outcome == 'failure' }}
@@ -34,5 +34,5 @@ jobs:
           BOT_AVATAR: '${{ secrets.AVATAR_URL }}'
           NOTIFY_MESSAGE: '${{ secrets.SUCCEED_MESSAGE }}'
           WEBHOOK_URL: '${{ secrets.WEBHOOK_URL }}'
-          SOURCE_FILE: 'Output'
-          DEST_NAME: 'Archive'
+          SOURCE_FILE: 'bin/Release'
+          DEST_NAME: 'Repeaters'
