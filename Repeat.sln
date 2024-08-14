@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater", "Repeater\Repeater.csproj", "{A1A5B886-2D0A-4D2A-AE13-409560D5227C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_", "Repeater_\Repeater_.csproj", "{E495A4DD-CEEC-470B-A0F4-D9EF3DD6FF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_Original", "Repeater_original\Repeater_Original.csproj", "{741E7D23-B9F5-40BD-A41A-72C8B388FBBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_XDir", "Repeater_XDir\Repeater_XDir.csproj", "{A8BE5E42-398F-4292-81C4-CA0DFD7BB94C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_closing", "Repeater_closing\Repeater_closing.csproj", "{575F0D6E-43EF-4700-8133-345879866BA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1A5B886-2D0A-4D2A-AE13-409560D5227C}.Release|x86.ActiveCfg = Release|x86
+		{A1A5B886-2D0A-4D2A-AE13-409560D5227C}.Release|x86.Build.0 = Release|x86
+		{E495A4DD-CEEC-470B-A0F4-D9EF3DD6FF3E}.Release|x86.ActiveCfg = Release|x86
+		{E495A4DD-CEEC-470B-A0F4-D9EF3DD6FF3E}.Release|x86.Build.0 = Release|x86
+		{741E7D23-B9F5-40BD-A41A-72C8B388FBBA}.Release|x86.ActiveCfg = Release|x86
+		{741E7D23-B9F5-40BD-A41A-72C8B388FBBA}.Release|x86.Build.0 = Release|x86
+		{A8BE5E42-398F-4292-81C4-CA0DFD7BB94C}.Release|x86.ActiveCfg = Release|x86
+		{A8BE5E42-398F-4292-81C4-CA0DFD7BB94C}.Release|x86.Build.0 = Release|x86
+		{575F0D6E-43EF-4700-8133-345879866BA1}.Release|x86.ActiveCfg = Release|x86
+		{575F0D6E-43EF-4700-8133-345879866BA1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59AE945E-784D-494E-A7BE-ED518B0FF56F}
+	EndGlobalSection
+EndGlobal
