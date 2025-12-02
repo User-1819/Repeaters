@@ -7,9 +7,9 @@ namespace Repeater
 {
     public static class Repeat
     {
-        public const string InternalVersion = "1.0.9";
-        public static ulong x = ulong.MinValue;
-        public static string XDir = "X/",
+        public const string InternalVersion = "1.1.0";
+        private static ulong x = ulong.MinValue;
+        private static readonly string XDir = "X/",
             Prgm = Assembly.GetExecutingAssembly().GetName().Name,
             Message = "You just launched a program that crashes your computer!";
         public static void Main(string[] _)

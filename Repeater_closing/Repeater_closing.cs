@@ -7,9 +7,9 @@ namespace Repeater
 {
     public static class Repeat
     {
-        public const string InternalVersion = "1.1.0";
-        public static ulong x = ulong.MinValue;
-        public static string Xpath = "x (Repeater (Closing)).txt",
+        public const string InternalVersion = "1.1.1";
+        private static ulong x = ulong.MinValue;
+        private static readonly string Xpath = "x (Repeater (Closing)).txt",
             Prgm = Assembly.GetExecutingAssembly().GetName().Name,
             Message = "This program launches itself, then closes itself repeatedly.";
         public static void Main(string[] _)
