@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater", "Repeater\Repeater.csproj", "{A1A5B886-2D0A-4D2A-AE13-409560D5227C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_Original", "Repeater_original\Repeater_Original.csproj", "{741E7D23-B9F5-40BD-A41A-72C8B388FBBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_", "Repeater_\Repeater_.csproj", "{741E7D23-B9F5-40BD-A41A-72C8B388FBBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeater_XDir", "Repeater_XDir\Repeater_XDir.csproj", "{A8BE5E42-398F-4292-81C4-CA0DFD7BB94C}"
 EndProject

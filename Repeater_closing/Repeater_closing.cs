@@ -7,17 +7,18 @@ namespace Repeater
 {
     public static class Repeat
     {
-        public const string InternalVersion = "1.1.1";
-        private static ulong x = ulong.MinValue;
-        private static readonly string Xpath = "x (Repeater (Closing)).txt",
+        public const string InternalVersion = "1.1.2";
+        static ulong x = ulong.MinValue;
+        static readonly string Xpath = "x (Repeater (Closing)).txt",
             Prgm = Assembly.GetExecutingAssembly().GetName().Name,
             Message = "This program launches itself, then closes itself repeatedly.";
-        public static void Main(string[] _)
+        public static void Main()
         {
             Console.Title = "Repeater (Closing) v" + InternalVersion;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.Out.WriteLine(Message);
+            Console.Out.Flush();
             Thread.Sleep(100);
             while (x != ulong.MaxValue)
             {

